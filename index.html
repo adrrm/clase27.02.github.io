@@ -6,16 +6,16 @@
    <title>Document</title>
 </head>
 <body>
-   <input id="Number" placeholder="Ingrese un número" type="number">
-   <button onclick="javascript: calcular()";>VALIDAR</button>
+   <input id="numero" placeholder="Ingrese un número" type="number">
+   <button onclick="javascript: calcular();">VALIDAR</button>
    <script>
-    function calcular();{
-        var index
+    function calcular(){
+        var index=document.getElementById("numero").value;
         do {
-            document.write([index]);
+            document.write([index] + ",");
             index=index-1
         }
-        while (index>0);
+        while (index>-1);
         
     }
    </script>
