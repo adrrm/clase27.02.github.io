@@ -6,17 +6,18 @@
    <title>Document</title>
 </head>
 <body>
+   <input id="Number" placeholder="Ingrese un número" type="number">
+   <button onclick="javascript: calcular()";>VALIDAR</button>
    <script>
-        var index=1;
-        
-
-        do{
-            document.write([index] + "<br>");
-            index = index + 1;
+    function calcular();{
+        var index
+        do {
+            document.write([index]);
+            index=index-1
         }
-        while(index<11);
-
-        document.write("Mi nombre es Alexandra.")
+        while (index>0);
+        
+    }
    </script>
 </body>
 </html>
